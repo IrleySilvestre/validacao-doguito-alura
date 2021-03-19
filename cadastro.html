@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="input-container">
-                    <input required name="cpf" id="cpf" class="input" type="text" placeholder="CPF">
+                    <input data-tipo="cpf" required name="cpf" id="cpf" class="input" type="text" placeholder="CPF">
                     <label class="input-label" for="cpf">CPF</label>
                     <span class="input-mensagem-erro">Este campo não está válido</span>
                 </div>
@@ -71,25 +71,25 @@
                 <legend class="formulario__legenda">Endereço</legend>
 
                 <div class="input-container">
-                    <input name="cep" id="cep" class="input" type="text" placeholder="CEP">
+                    <input data-tipo="cep" name="cep" id="cep" class="input" type="text" placeholder="CEP" pattern="[\d]{5}-?[\d]{3}" required>
                     <label class="input-label" for="cep">CEP</label>
                     <span class="input-mensagem-erro">Este campo não está válido</span>
                 </div>
 
                 <div class="input-container">
-                    <input name="logradouro" id="logradouro" class="input" type="text" placeholder="Logradouro">
+                    <input data-tipo="logradouro" required name="logradouro" id="logradouro" class="input" type="text" placeholder="Logradouro">
                     <label class="input-label" for="logradouro">Logradouro</label>
                     <span class="input-mensagem-erro">Este campo não está válido</span>
                 </div>
 
                 <div class="input-container">
-                    <input name="cidade" id="cidade" class="input" type="text" placeholder="Cidade">
+                    <input data-tipo="cidade" required name="cidade" id="cidade" class="input" type="text" placeholder="Cidade">
                     <label class="input-label" for="cidade">Cidade</label>
                     <span class="input-mensagem-erro">Este campo não está válido</span>
                 </div>
 
                 <div class="input-container">
-                    <input name="estado" id="estado" class="input" type="text" placeholder="Estado">
+                    <input data-tipo="estado" required name="estado" id="estado" class="input" type="text" placeholder="Estado">
                     <label class="input-label" for="estado">Estado</label>
                     <span class="input-mensagem-erro">Este campo não está válido</span>
                 </div>
